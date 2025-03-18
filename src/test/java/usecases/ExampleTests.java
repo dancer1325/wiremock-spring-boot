@@ -13,7 +13,7 @@ import org.springframework.web.client.RestClient;
 import org.wiremock.spring.EnableWireMock;
 
 @SpringBootTest(classes = ExampleTests.AppConfiguration.class)
-@EnableWireMock
+@EnableWireMock // run 1 WireMock instance / default configuration
 public class ExampleTests {
   @Value("${wiremock.server.baseUrl}")
   private String wireMockUrl;
